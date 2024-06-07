@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greet Visitor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Align horizontally in the center */
+            align-items: center; /* Align vertically in the center */
+            height: 100vh; /* Set the height of the body to the full viewport height */
+            margin: 0; /* Remove default margin */
+            background-color: #f0f0f0; /* Set background color */
+        }
+        .greeting-container {
+            border: 2px solid #333; /* Add border around greeting */
+            padding: 20px; /* Add padding for better spacing */
+            background-color: hsl(313, 86%, 73%); /* Set background color of greeting container */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            text-align: center; /* Align text in the center */
+        }
+        h1 {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #333; /* Set text color to dark */
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting-container">
+        <h1>Hello, {{ name }} <span style="color: white;"></span></h1>
+    </div>
+</body>
+</html>

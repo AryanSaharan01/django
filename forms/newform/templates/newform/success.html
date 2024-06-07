@@ -1,0 +1,46 @@
+<!-- contact_success.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #367B35;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you, <strong> {{ name }} </strong> for contacting us!</h1>
+        <a href="{% url 'newform' %}">Go back to Home</a>
+    </div>
+</body>
+</html>
